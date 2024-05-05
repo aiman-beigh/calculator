@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="display-box"><p class="display-out"></p></div>
+    <p><button class="number-button" onclick="calculations('1')">1</button>
+
+    <button class="number-button" onclick="calculations('2')">2</button>
+
+    <button class="number-button" onclick="calculations('3')">3</button>
+
+    <button class="yellow-button" onclick="calculations('+')">+</button></p>
+
+   <p> <button class="number-button" onclick="calculations('4')">4</button>
+
+    <button class="number-button" onclick="calculations('5')">5</button>
+
+    <button class="number-button" onclick="calculations('6')">6</button>
+
+    <button class="yellow-button" onclick="calculations('-')">-</button></p>
+
+   <p><button class="number-button" onclick="calculations('7')">7</button>
+
+    <button class="number-button" onclick="calculations('8')">8</button>
+
+    <button class="number-button" onclick="calculations('9')">9</button>
+
+    <button class="yellow-button" onclick="calculations('*')">*</button></p> 
+
+    <p><button class="number-button" onclick="calculations('0')">0</button>
+
+    <button class="number-button" onclick="calculations('.')">.</button>
+
+    <button class="number-button" onclick="calculation=eval(calculation);localStorage.setItem('calculation',calculation);display();">=</button>
+
+    <button class="yellow-button" onclick="calculations('/')">/</button></p>
+
+    <button class="clear-button" onclick="localStorage.removeItem('calculation');calculation=' '; display()">clear</button>
+    
+    <script src="calculator.js">
+       
+    </script>
+  </body>
+</html>
